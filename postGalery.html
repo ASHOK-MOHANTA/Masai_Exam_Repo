@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Gallery</title>
+    <style>
+        .card{
+            border:2px solid black;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .green{
+            border-color: green;
+        }
+        .orange{
+            border-color: orange;
+        }
+        .red{
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Post Gallery</h1>
+    <input type="text" id="searchInput" placeholder="Search posts by title">
+    <select id="userFilter">
+        <option value="">Filter by User ID</option>
+    </select>
+    <select  id="sortSelect">
+        <option value=""Sort By></option>
+        <option value="titleASC">Title A-Z</option>
+        <option value="titleDesc">Title Z-A</option>
+        <option value="idASC">By Post ID ASC</option>
+        <option value="idDesc">By Post ID DESC</option>
+    </select>
+    <div id="postCointer">
+        
+    </div>
+    <p id="noResult" style="display: none;">
+            No Posts Found for the Current Filter Option
+        </p>
+    <script src="script.js"></script>
+</body>
+</html>
